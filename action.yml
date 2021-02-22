@@ -1,0 +1,25 @@
+name: "Append Github PR description"
+description: "Append the provided deployment URL to Github pull request description"
+branding:
+  icon: "align-left"
+  color: "blue"
+inputs:
+  auth:
+    description: "The github auth token"
+    required: true
+  repo:
+    description: "The github repo name"
+    required: true
+  owner:
+    description: "The github repo owner"
+    required: true
+  pr:
+    description: "The pr number"
+    required: true
+  url:
+    description: "The output deployed url"
+    required: true
+
+runs:
+  using: "node12"
+  main: "dist/index.js"
