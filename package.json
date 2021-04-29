@@ -1,6 +1,6 @@
 {
   "name": "action-append-pr-description",
-  "description": "Append the deployment URL to Github's pull request description",
+  "description": "Append the deployment URL to GitHub's pull request description",
   "main": "index.js",
   "scripts": {
     "package": "ncc build index.js --license licenses.txt"
@@ -11,7 +11,7 @@
   },
   "keywords": [],
   "author": "chabroA",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/chabroA/action-append-pr-description/issues"
   },
