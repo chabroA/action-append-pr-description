@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.1](https://www.github.com/chabroA/action-append-pr-description/compare/v1.1.0...v1.1.1) (2021-12-19)
+
+
+### Bug Fixes
+
+* No PR description exception ([#6](https://www.github.com/chabroA/action-append-pr-description/issues/6)) ([e2b270e](https://www.github.com/chabroA/action-append-pr-description/commit/e2b270ec72d25c18efc0cfc7b64f1a50a52984be))
+
 ## [1.1.0](https://www.github.com/chabroA/action-append-pr-description/compare/v1.0.0...v1.1.0) (2021-04-29)
 
 
