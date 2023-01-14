@@ -6,6 +6,7 @@ const repo = core.getInput('repo');
 const owner = core.getInput('owner');
 const pr = core.getInput('pr');
 const url = core.getInput('url');
+const message = core.getInput('message');
 
 if (!auth || !repo || !owner || !pr || !url) {
   core.setFailed('Please provide all arguments');
@@ -41,7 +42,9 @@ async function main() {
     return 0;
   }
 
-  const updatedBody = `${body} \n\n ----- \nDeployed to: ${url}`;
+  const displayedMessage = message ? message : 'Deployed to:';
+
+  const updatedBody = `${body} \n\n ----- \n${displayedMessage} ${url}`;
 
   const updateResponse = await octokit
     .request('PATCH /repos/{owner}/{repo}/pulls/{pull_number}', {

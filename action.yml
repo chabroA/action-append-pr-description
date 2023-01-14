@@ -19,6 +19,9 @@ inputs:
   url:
     description: "The output deployed url"
     required: true
+  message:
+    description: "The output deployed message (optional)"
+    required: false
 
 runs:
   using: "node12"
