@@ -14,6 +14,7 @@ steps:
       owner: ${{ github.repository_owner }}
       pr: ${{ github.event.number }}
       url: "https://my-url.test"
+      message: "My url :" 
 ```
 
 ## Inputs
@@ -27,6 +28,8 @@ steps:
 - `pr` - (required) The pull request number.
 
 - `url` - (required) The url to append to the specified pull request description.
+
+- `message` - (optional) The message to append before the url.
 
 ## Outputs
 
