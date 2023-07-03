@@ -1,5 +1,5 @@
 name: "Append Github PR description"
-description: "Append the provided deployment URL to Github pull request description"
+description: "Append the provided URL to Github pull request description"
 branding:
   icon: "align-left"
   color: "blue"
@@ -17,12 +17,12 @@ inputs:
     description: "The pr number"
     required: true
   url:
-    description: "The output deployed url"
+    description: "The output url"
     required: true
   message:
-    description: "The output deployed message (optional)"
+    description: "The output message (optional)"
     required: false
 
 runs:
-  using: "node12"
+  using: "node16"
   main: "dist/index.js"

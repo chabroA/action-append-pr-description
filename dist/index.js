@@ -45,7 +45,7 @@ async function main() {
   }
 
   if (body.includes(url)) {
-    core.info('Decription already includes deployed url');
+    core.info('Decription already includes URL provided');
     return 0;
   }
 
